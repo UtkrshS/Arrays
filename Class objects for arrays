@@ -1,0 +1,27 @@
+
+
+
+public class Practice {
+
+    public static void main(String[] args) {
+       
+        int[][] x1=new int[3][2];
+        double[][] x2=new double[3][2];
+        boolean[][] x3=new boolean[3][2];
+        byte[][] x4=new byte[3][2];
+        System.out.println(x1.getClass().getName());
+        System.out.println(x2.getClass().getName());
+        System.out.println(x3.getClass().getName());
+        System.out.println(x4.getClass().getName());
+    }
+    
+}
+
+
+
+Output:
+[[I
+[[D
+[[Z
+[[B
+BUILD SUCCESSFUL (total time: 0 seconds)
