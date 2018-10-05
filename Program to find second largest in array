@@ -1,0 +1,45 @@
+import java.util.Arrays;
+
+/**
+ *
+ * @author Utkarsh<Utkarsh at SRMUH>
+ */
+public class abc {
+   
+    static void secondLargest(int[] input){
+    
+        int firstLargest, secondLargest;
+        if(input[0]>input[1])
+        {
+        firstLargest=input[0];
+        secondLargest=input[1];
+        }
+        else
+        {
+        firstLargest=input[1];
+        secondLargest=input[0];
+        }
+    for(int i=0;i<input.length;i++)
+    {
+        if(input[i]>firstLargest)
+        {
+        secondLargest=firstLargest;
+        firstLargest=input[i];
+        
+        }   
+        else if(input[i]<firstLargest && input[i]>secondLargest)  
+        {
+        secondLargest=input[i];
+        }
+            
+    }
+        
+    System.out.println(Arrays.toString(input));
+        System.out.println("Second largest element is:"+secondLargest);
+        
+    }
+    
+    public static void main(String[] args){
+    secondLargest(new int[]{2,34,56,32,34,56,76});
+}
+}
